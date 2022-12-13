@@ -1,0 +1,1 @@
+# Veldrid.VK.NativeAsset

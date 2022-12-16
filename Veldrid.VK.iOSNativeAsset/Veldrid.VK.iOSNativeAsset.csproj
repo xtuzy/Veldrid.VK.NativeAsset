@@ -10,7 +10,7 @@
     <DebugType>Embedded</DebugType>
     <EmbedAllSources>True</EmbedAllSources>
     <NoBindingEmbedding>False</NoBindingEmbedding>
-    <Version>1.3.231</Version>
+    <Version>1.3.233</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -20,12 +20,12 @@
   </ItemGroup>
 
  <ItemGroup>
-    <Compile Include="libMoltenVK-ios.linkwith.cs">
-      <DependentUpon>libMoltenVK-ios.a</DependentUpon>
+    <Compile Include="libMoltenVK.linkwith.cs">
+      <DependentUpon>libMoltenVK.a</DependentUpon>
     </Compile>
   </ItemGroup>
  <ItemGroup>
-    <NativeReference Include="libMoltenVK-ios.a">
+    <NativeReference Include="libMoltenVK.a">
       <Kind>Static</Kind>
       <SmartLink>True</SmartLink>
     </NativeReference>

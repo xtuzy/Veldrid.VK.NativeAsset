@@ -10,7 +10,7 @@
     <DebugType>Embedded</DebugType>
     <EmbedAllSources>True</EmbedAllSources>
     <NoBindingEmbedding>False</NoBindingEmbedding>
-    <Version>1.3.231</Version>
+    <Version>1.3.232</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -19,7 +19,7 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-     <NativeReference Include="libvulkan.dylib">
+     <NativeReference Include="libMoltenVK.dylib">
       <Kind>Dynamic</Kind>
       <SmartLink>True</SmartLink>
     </NativeReference>

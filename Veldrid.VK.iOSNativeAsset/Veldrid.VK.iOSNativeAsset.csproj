@@ -10,7 +10,7 @@
     <DebugType>Embedded</DebugType>
     <EmbedAllSources>True</EmbedAllSources>
     <NoBindingEmbedding>False</NoBindingEmbedding>
-    <Version>1.3.233</Version>
+    <Version>1.3.235</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
@@ -27,6 +27,8 @@
  <ItemGroup>
     <NativeReference Include="libMoltenVK.a">
       <Kind>Static</Kind>
+      <Frameworks>IOSurface QuartzCore Metal Foundation IOKit UIKit</Frameworks>
+      <ForceLoad>True</ForceLoad>
       <SmartLink>True</SmartLink>
     </NativeReference>
   </ItemGroup>

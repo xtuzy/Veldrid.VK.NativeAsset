@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-maccatalyst</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Deterministic>False</Deterministic>
+    <DebugType>Embedded</DebugType>
+    <EmbedAllSources>True</EmbedAllSources>
+    <NoBindingEmbedding>False</NoBindingEmbedding>
+    <Version>1.3.235</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libMoltenVK.linkwith.cs">
+      <DependentUpon>libMoltenVK.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="libMoltenVK.a">
+      <Kind>Static</Kind>
+      <Frameworks>IOSurface QuartzCore Metal Foundation IOKit UIKit</Frameworks>
+      <ForceLoad>True</ForceLoad>
+      <SmartLink>True</SmartLink>
+    </NativeReference>
+  </ItemGroup>
+</Project>

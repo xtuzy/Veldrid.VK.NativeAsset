@@ -1,0 +1,4 @@
+namespace Veldrid.VK.MacCatalystNativeAsset
+{
+
+}

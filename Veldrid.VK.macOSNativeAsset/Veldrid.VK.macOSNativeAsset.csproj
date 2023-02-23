@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net7.0-macos</TargetFramework>
     <Nullable>enable</Nullable>
@@ -19,7 +19,7 @@
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
   <ItemGroup>
-     <NativeReference Include="libMoltenVK.dylib">
+     <NativeReference Include="libvulkan.dylib">
       <Kind>Dynamic</Kind>
       <SmartLink>True</SmartLink>
     </NativeReference>
